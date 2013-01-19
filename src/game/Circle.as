@@ -8,7 +8,7 @@ package game
 	 */
 	public class Circle 
 	{
-		private static const CIRCLE_ANGLE:Number = .5;
+		private static const CIRCLE_ANGLE:Number = .05;
 		
 		private var m_radius:uint;
 		private var m_position:Point;
@@ -17,7 +17,7 @@ package game
 		public function Circle() 
 		{
 			m_position = new Point();
-			m_radius = 20;
+			m_radius = 50;
 			m_previousOffset = Math.random() * ( Math.PI / 2 ) + Math.PI / 4;
 		}
 		
