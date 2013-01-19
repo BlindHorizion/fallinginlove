@@ -40,6 +40,13 @@ package utils
 		{
 			return new Point( p1.x * scalar, p1.y * scalar );
 		}
+		
+		public static function vectorDisplacement( p1:Point, p2:Point ):Number
+		{
+			var deltaX:Number = p1.x - p2.x;
+			var deltaY:Number = p1.y - p2.y;
+			return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+		}
 	}
 
 }

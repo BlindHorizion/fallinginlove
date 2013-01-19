@@ -37,6 +37,8 @@ package
 			LayerManager.init( stage );
 			LayerManager.addLayer( Globals.STATE_LAYER );
 			LayerManager.addLayer( Globals.OBJECT_LAYER );
+			LayerManager.addLayer( Globals.GUI_LAYER );
+			LayerManager.addLayer( Globals.TOP_LAYER );
 			
 			StateManager.init( );
 		}

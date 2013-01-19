@@ -1,6 +1,7 @@
 package gameobject 
 {
 	import flash.display.MovieClip;
+	import flash.events.EventDispatcher;
 	import flash.geom.Point;
 	import game.Globals;
 	import utils.LayerManager;
@@ -8,9 +9,10 @@ package gameobject
 	 * ...
 	 * @author Blake Gross
 	 */
-	public class GameObject 
+	public class GameObject extends EventDispatcher
 	{
 		protected var m_pAsset:MovieClip;
+		public function get asset():MovieClip { return m_pAsset; }
 		protected var m_velocity:Point;
 		
 		public function get width(): Number { return m_pAsset.width; }
@@ -21,6 +23,7 @@ package gameobject
 			if ( m_pAsset )
 			{
 				LayerManager.addToLayer( m_pAsset, Globals.OBJECT_LAYER );
+				trace( "created letter" );
 			}
 			
 			init();
@@ -31,6 +34,10 @@ package gameobject
 			// stub
 		}
 		
+		public function hitTestObject(obj:GameObject):Boolean
+		{
+			return m_pAsset.hitTestObject(obj.m_pAsset);
+		}
 	}
 
 }

@@ -14,10 +14,15 @@ package utils
 		private static var m_stage:Stage;
 		public static function get stage():Stage { return m_stage; }
 		
+		public static var stageHeight:Number;
+		public static var stageWidth:Number;
+		
 		public static function init( stage:Stage ):void
 		{
 			m_layerDictionary = new Dictionary();
 			m_stage = stage;
+			stageWidth = m_stage.stageWidth;
+			stageHeight = m_stage.stageHeight;
 		}
 		
 		public static function addLayer( layerName:String ):void
