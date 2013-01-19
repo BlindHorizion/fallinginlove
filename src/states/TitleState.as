@@ -1,5 +1,6 @@
 package states 
 {
+	import flash.events.MouseEvent;
 	/**
 	 * ...
 	 * @author ...
@@ -9,9 +10,13 @@ package states
 		
 		public function TitleState() 
 		{
-			
+			//playButton.addEventListener(MouseEvent.CLICK, onPlayClick);
 		}
 		
+		private function onPlayClick(e:MouseEvent):void
+		{
+			StateManager.goToState(StateManager.GAME);
+		}
 	}
 
 }

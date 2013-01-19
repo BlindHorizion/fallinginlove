@@ -13,6 +13,8 @@ package gameobject
 		protected var m_pAsset:MovieClip;
 		protected var m_velocity:Point;
 		
+		public function get width(): Number { return m_pAsset.width; }
+		
 		public function GameObject( asset:MovieClip ) 
 		{
 			m_pAsset = asset;
