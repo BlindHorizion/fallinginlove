@@ -16,15 +16,15 @@ package states
 			m_gameStates[TITLE] = new TitleState();
 			m_gameStates[GAME] = new GameState();
 			m_gameStates[END] = new EndState();
-			m_index = TITLE;
-			LayerManager.addToLayer(m_gameStates[index], Globals.STATE_LAYER);
+			m_index = GAME;
+			LayerManager.addToLayer(m_gameStates[m_index], Globals.STATE_LAYER);
 		}
 		
 		public static function goToNext( ): void
 		{
-			LayerManager.removeFromParent(m_gameStates[index]);
+			LayerManager.removeFromParent(m_gameStates[m_index]);
 			m_index++;
-			if (index >= gameStates.length) { m_index = 0; }
+			if (m_index >= m_gameStates.length) { m_index = 0; }
 			LayerManager.addToLayer(m_gameStates[m_index], Globals.STATE_LAYER);
 		}
 		

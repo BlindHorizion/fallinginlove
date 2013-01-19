@@ -24,8 +24,8 @@ package utils
 			var mag : Number = Math.sqrt(p1.x * p1.x + p1.y * p1.y);
 			if (mag == 0)
 			{
-				newPoint = 0;
-				newPoint = 0;
+				newPoint.x = 0;
+				newPoint.y = 0;
 			}
 			else
 			{
