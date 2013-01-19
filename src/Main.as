@@ -7,6 +7,8 @@ package
 	import flash.display.StageScaleMode;
 	import flash.ui.Multitouch;
 	import flash.ui.MultitouchInputMode;
+	import game.Globals;
+	import utils.LayerManager;
 	
 	/**
 	 * ...
@@ -22,8 +24,16 @@ package
 			
 			// touch or gesture?
 			Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;
+			stage.scaleMode = StageScaleMode.EXACT_FIT;
 			
+			init();
 			// entry point
+		}
+		
+		private function init():void
+		{
+			LayerManager.init( stage );
+			LayerManager.addLayer( Globals.OBJECT_LAYER );
 		}
 		
 		private function deactivate(e:Event):void 
