@@ -32,11 +32,23 @@ package gameobject
 			m_wanderCircle.update( MathUtils.vectorAdd( new Point( m_pAsset.x, m_pAsset.y ), MathUtils.vectorMultiply( m_fwd, 20 ) ) );
 			var force:Point = seek( m_wanderCircle.getRandomPosition() );
 			m_fwd = MathUtils.vectorNormalize( force );
-			
+			checkBounds();
 			var velocity:Point = MathUtils.vectorMultiply( m_fwd, SPEED );
 			
 			m_pAsset.x += velocity.x;
 			m_pAsset.y += velocity.y;
+		}
+		
+		private function checkBounds():void
+		{
+			if ( m_pAsset.x < 0 )
+			{
+				m_wanderCircle.checkDirection( true );
+			}
+			else if( m_pAsset.x + width > LayerManager.stage.stageWidth )
+			{
+				m_wanderCircle.checkDirection( false );
+			}
 		}
 		
 		private function seek( targPos:Point ):Point

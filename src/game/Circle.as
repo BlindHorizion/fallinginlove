@@ -36,11 +36,21 @@ package game
 			
 			var xPos:Number = Math.cos( m_previousOffset ) * m_radius + m_position.x;
 			var yPos:Number = Math.sin( m_previousOffset ) * m_radius + m_position.y;
-			//trace( xPos, yPos );
-			
+
 			return new Point( xPos, yPos );
 		}
 		
+		public function checkDirection( isLeft:Boolean ):void
+		{
+			if ( isLeft )
+			{
+				m_previousOffset = ( 3 * Math.PI ) / 4;
+			}
+			else
+			{
+				m_previousOffset = Math.PI / 4;
+			}
+		}
 	}
 
 }
