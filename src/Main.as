@@ -8,6 +8,7 @@ package
 	import flash.ui.Multitouch;
 	import flash.ui.MultitouchInputMode;
 	import game.Globals;
+	import gameobject.Player;
 	import utils.LayerManager;
 	
 	/**
