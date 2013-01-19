@@ -20,20 +20,17 @@
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>D:\Users\bdg8765\AppData\Local\Apps\2.0\73LBE3TD.Y34\CR80XMT6.R3V\gith..tion_8f45a2159c87c850_0001.0000_4fca6a02c52cbc80\banner.main.ad.rit.edu\students\bdg8765\IGMProfile\Documents\GitHub\fallinginlove\src</path-element>
+      <path-element>D:\Users\tjs7664\AppData\Local\Apps\2.0\73LBE3TD.Y34\CR80XMT6.R3V\gith..tion_8f45a2159c87c850_0001.0000_4fca6a02c52cbc80\banner.main.ad.rit.edu\students\tjs7664\IGMProfile\Documents\GitHub\fallinginlove\src</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
-    <library-path append="true">
-      <path-element>D:\Users\bdg8765\AppData\Local\Apps\2.0\73LBE3TD.Y34\CR80XMT6.R3V\gith..tion_8f45a2159c87c850_0001.0000_4fca6a02c52cbc80\banner.main.ad.rit.edu\students\bdg8765\IGMProfile\Documents\GitHub\fallinginlove\lib\swc\Untitled-1.swc</path-element>
-    </library-path>
   </compiler>
   <file-specs>
-    <path-element>D:\Users\bdg8765\AppData\Local\Apps\2.0\73LBE3TD.Y34\CR80XMT6.R3V\gith..tion_8f45a2159c87c850_0001.0000_4fca6a02c52cbc80\banner.main.ad.rit.edu\students\bdg8765\IGMProfile\Documents\GitHub\fallinginlove\src\Main.as</path-element>
+    <path-element>D:\Users\tjs7664\AppData\Local\Apps\2.0\73LBE3TD.Y34\CR80XMT6.R3V\gith..tion_8f45a2159c87c850_0001.0000_4fca6a02c52cbc80\banner.main.ad.rit.edu\students\tjs7664\IGMProfile\Documents\GitHub\fallinginlove\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>
   <default-size>
-    <width>720</width>
-    <height>1280</height>
+    <width>480</width>
+    <height>762</height>
   </default-size>
 </flex-config>

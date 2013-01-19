@@ -6,8 +6,8 @@
     <movie input="" />
     <movie path="bin\FallinginLove.swf" />
     <movie fps="30" />
-    <movie width="720" />
-    <movie height="1280" />
+    <movie width="480" />
+    <movie height="762" />
     <movie version="3" />
     <movie minorVersion="1" />
     <movie platform="AIR Mobile" />
@@ -50,7 +50,7 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="lib\swc\Untitled-1.swc" />
+    <!-- example: <element path="..." /> -->
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

@@ -10,6 +10,7 @@ package
 	import game.Globals;
 	import gameobject.Player;
 	import utils.LayerManager;
+	import states.StateManager;
 	
 	/**
 	 * ...
@@ -34,7 +35,10 @@ package
 		private function init():void
 		{
 			LayerManager.init( stage );
+			LayerManager.addLayer( Globals.STATE_LAYER );
 			LayerManager.addLayer( Globals.OBJECT_LAYER );
+			
+			StateManager.init( );
 		}
 		
 		private function deactivate(e:Event):void 
